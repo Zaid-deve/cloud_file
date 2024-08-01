@@ -1,0 +1,24 @@
+/* css default variables */
+
+:root {
+
+    /* colors */
+    --color--background: #FFFFFF;
+    --color--light: #F8FAFC;
+    --color--primary: #4F46E5;
+    --color--primary--bg: #A5B4FC;
+    --color--danger: #F43F5E;
+    --color--danger--bg: #FFF1F2;
+    --color--text: #1E293B;
+    --color--text--30: #475569;
+    --color--stroke: #CBD5E1;
+    --color--success: #22C55E;
+    --color--success--bg: #F0FDF4;
+    --color--file: #EEF2FF;
+    --color--blue: #6366F1;
+    --color--blue-light: #A5B4FC;
+    --color--btn--text: #FFFFFF;
+
+    /* fonts */
+    --font--primary: "Plus Jakarta Sans", sans-serif;
+}

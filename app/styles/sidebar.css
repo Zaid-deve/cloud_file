@@ -1,0 +1,93 @@
+.sidebar {
+    box-shadow: 0 0 1px var(--color--stroke);
+}
+
+.sidebar-hr {
+    height: 1px;
+    width: 100%;
+    background: var(--color--stroke);
+}
+
+.sidebar-list-item:hover :where(.sidebar-list-icon i, .sidebar-list-text) {
+    color: var(--color--primary) !important;
+}
+
+.sidebar-list-icon {
+    margin-top: 5px;
+}
+
+.sidebar-list-icon i {
+    font-size: 1.4rem;
+}
+
+.sidebar-list-text {
+    font-weight: 600;
+}
+
+.sidebar-list-item .badge {
+    background: var(--color--primary--bg);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.sidebar-username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sidebar-modal {
+    padding: 16px;
+    bottom: 16px;
+    background-color: var(--color--light);
+}
+
+.sidebar-modal-icon {
+    height: 40px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    background: #E2E8F0;
+}
+
+.sidebar-modal-icon i {
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.sidebar-modal .btn-close i {
+    font-size: .7rem;
+}
+
+.sidebar-btns .btn {
+    height: 30px;
+}
+
+.sidebar-list-item {
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+@media (max-width:768px) {
+    .sidebar-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1160;
+        width: 100%;
+        height: 72px !important;
+        overflow: hidden;
+    }
+
+    .sidebar-container.sidebar-container.show-body{
+        height: 100% !important;
+    }
+
+    .sidebar-body {
+        transition: all .1s linear;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    .sidebar-container.show-body .sidebar-body {
+        transform: scale(1);
+    }
+}

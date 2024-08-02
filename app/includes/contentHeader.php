@@ -21,7 +21,7 @@
             <div class="content-header-search-icon btn-filter-toggler ms-auto" tabindex="-1">
                 <i class='bx bx-filter'></i>
             </div>
-            <div class="position-absolute top-100 end-0 bg-white rounded-4 content-header-filter">
+            <div class="position-absolute top-100 end-0 z-2 bg-white rounded-4 content-header-filter">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <a href="?filter=size" class="d-flex gap-2 align-items-center">

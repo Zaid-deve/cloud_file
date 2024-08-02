@@ -3,15 +3,22 @@
 * {
     user-select: none;
     color: var(--color--text);
+    box-shadow: none !important;
+    scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
     display: none;
 }
 
+html{
+    overflow: hidden;
+}
+
 p {
     font-size: 1rem;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 h1 {

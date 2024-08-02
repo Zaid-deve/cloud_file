@@ -1,0 +1,10 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+.error404 {
+    line-height: 1;
+    font-weight: 800;
+    font-size: clamp(120px, 30vw, 320px);
+}

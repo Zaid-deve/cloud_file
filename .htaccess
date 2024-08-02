@@ -1,10 +1,12 @@
-# Redirect to HTTPS if loaded on HTTP
+# Enable Rewrite Engine
 RewriteEngine On
+
+# Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Restrict direct access to folders and redirect to custom error document
-ErrorDocument 403 /app/error404.php
+ErrorDocument 403 /cloud_file_system/app/error404.php
 
 # Remove file extensions from URLs
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -14,3 +16,6 @@ RewriteRule ^([^/]+)/?$ $1.php [L]
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Ensure custom error pages for 404 errors
+ErrorDocument 404 /cloud_file_system/app/error404.php

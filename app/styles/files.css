@@ -1,0 +1,60 @@
+.files-container{
+    overflow: auto;
+}
+
+.files-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 !important;
+}
+
+.btn-toggle-recent-files-filter span {
+    font-size: .9rem;
+    color: var(--color--text);
+}
+
+.files-recent-flex {
+    overflow: auto;
+}
+
+.file-wrapper {
+    overflow: hidden;
+    border: 1px solid var(--color--stroke);
+    flex-shrink: 0 !important;
+    max-width: 275px;
+}
+
+
+.file-wrapper .file-preview {
+    background: var(--color--light);
+    height: 128px;
+    border-bottom: 1px solid var(--color--stroke);
+}
+
+.file-wrapper-small .file-preview{
+    height: 90px !important;
+}
+
+.file-preview-icon .fiv-viv {
+    font-size: 4.5rem;
+}
+
+.file-wrapper-small .file-preview-icon .fiv-viv {
+    font-size: 3rem;
+}
+
+.file-wrapper-small .file-preview{
+    height: 90px !important;
+}
+
+.file-wrapper .file-name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: calc(100% - 13%);
+}
+
+.btn-toggle-file-options i {
+    font-size: 1.3rem;
+    color: var(--color--text);
+}
